@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewsAppMaui.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="NewsAppMAUI"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Que esta sucediendo en el mundo"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Busca las noticias mas relevantes hoy"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            <SearchBar
+                x:Name="SearchBar"
+                Text="morena"
+                SemanticProperties.Hint="Busca las noticias que quieres leer por nombre"
+                HorizontalOptions="Center"/>
+            <Button
+                x:Name="CounterBtn"
+                Text="Search"
+                SemanticProperties.Hint="Buscar noticias"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
